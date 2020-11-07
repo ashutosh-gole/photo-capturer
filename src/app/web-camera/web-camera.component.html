@@ -1,0 +1,17 @@
+<div class="camera-page" fxLayout="column" fxLayoutAlign="start center">
+  <div class="heading">Web Camera Capturer</div>
+  <div>
+    <webcam [height]="400" [width]="1000" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
+      [allowCameraSwitch]="allowCameraSwitch">
+    </webcam>
+  </div>
+  <div>
+    <button class="actionBtn" (click)="triggerSnapshot()">
+      Click Here and take the Shot
+    </button>
+  </div>
+  <div class="snapshot" *ngIf="webcamImage">
+    <h2>Here is your image!</h2>
+    <img [src]="webcamImage.imageAsDataUrl" />
+  </div>
+</div>

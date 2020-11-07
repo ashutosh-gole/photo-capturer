@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "photo-capturer"
+    }
+  },
+  "defaultProject": "photo-capturer",
+  "cli": {
+    "analytics": "01943db6-badc-4b79-9fca-248990514ba9"
+  }
 }

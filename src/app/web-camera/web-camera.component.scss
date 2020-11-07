@@ -1,0 +1,18 @@
+.camera-page {
+    width: 100%;
+    padding: 4px;
+    
+    .heading {
+        margin: 8px;
+        font-size: 24px;
+        font-weight: 900;
+    }
+    
+    .webcam-wrapper {
+        border: 4px solid red;
+        video {
+            border: 1px solid black !important;
+            border-radius: 25px !important;
+        }
+    }
+}
