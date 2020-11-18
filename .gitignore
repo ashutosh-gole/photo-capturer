@@ -1,6 +1,5 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-.firebase
 # compiled output
 /dist
 /tmp
@@ -49,4 +48,4 @@ Thumbs.db
 # Firebase Hosting
 .firebaserc
 firebase.json
-/.firebase
+.firebase/
