@@ -4,3 +4,10 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@import "app/styles/scrollbar.scss";
+@import "app/styles/mobile.scss";
+
+*:focus {
+  outline: none;
+}

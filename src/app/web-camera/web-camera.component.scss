@@ -1,18 +1,88 @@
 .camera-page {
+  width: 100%;
+  padding: 4px;
+
+  .heading {
+    margin: 8px;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .webcam-wrapper {
+    border: 4px solid red;
+    video {
+      border: 1px solid black !important;
+      border-radius: 25px !important;
+    }
+  }
+
+  .cameraButton {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 8px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #d7c64a;
+    cursor: pointer;
+  }
+
+  .seperator {
+    width: 70%;
+    border: 2px dashed black;
+    margin: 8px;
+  }
+
+  .imageListSection {
     width: 100%;
-    padding: 4px;
-    
-    .heading {
+    border: 4px solid #a22020;
+    border-radius: 12px;
+    margin: 8px;
+    padding: 8px;
+    overflow-x: scroll;
+
+    .imageContent {
+      margin: 10px;
+      position: relative;
+
+      .capturedPhoto {
+        width: 500px;
+        height: auto;
+        border: 1px solid;
+        border-radius: 24px;
+      }
+
+      .deleteButton {
+        position: absolute;
+        top: 2%;
+        right: 1%;
+        width: 40px;
         margin: 8px;
-        font-size: 24px;
-        font-weight: 900;
+        border: 2px solid #100f0f;
+        border-radius: 25px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+      }
+
+      .downloadButton {
+        position: absolute;
+        top: 1%;
+        right: 12%;
+        width: 48px;
+        margin: 8px;
+        border: 2px solid #100f0f;
+        border-radius: 25px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+      }
     }
-    
-    .webcam-wrapper {
-        border: 4px solid red;
-        video {
-            border: 1px solid black !important;
-            border-radius: 25px !important;
-        }
-    }
+  }
+
+  .emptyListHeading {
+    margin: 60px 0;
+    font-size: 16px;
+    font-weight: 900;
+  }
 }

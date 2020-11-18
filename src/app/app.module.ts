@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { WebcamModule } from 'ngx-webcam';
+
+import { AppComponent } from './app.component';
 import { WebCameraComponent } from './web-camera/web-camera.component';
 
 @NgModule({
@@ -15,6 +17,7 @@ import { WebCameraComponent } from './web-camera/web-camera.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    LayoutModule,
     FlexLayoutModule,
     WebcamModule
   ],
